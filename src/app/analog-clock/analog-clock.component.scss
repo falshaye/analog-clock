@@ -153,12 +153,40 @@
         .sec-hand {
             width: 1px;
             height: 50%;
-            background-color: #ff6767;
+            background-color: #0098ff;
             transform-origin: 50% 80%;
             position: absolute;
             top: 10%;
             left: 50%;
             border-radius: 100% 100% 0 0;
-        }       
+        }    
+        
+        .dateInfo {
+            height: auto;
+            color: #2e9fff;
+            font-size: 10px;
+            position: absolute;            
+        }
+        .current-day {
+            @extend .dateInfo;
+            left: 15%;
+            padding: 3px;
+            border: 1px solid rgb(133,131,131);
+        }
+
+        .current-month {
+            @extend .dateInfo;
+            right: 15%;
+            left: auto;
+            padding: 3px;
+            border: 1px solid rgb(133,131,131);
+        }
+
+        .current-year {
+            @extend .dateInfo;
+            font-weight: bold;
+            bottom: 20%;
+            left: auto;
+        }
     }
 }
